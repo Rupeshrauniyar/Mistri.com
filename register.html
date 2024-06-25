@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mistri</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+  />
+  <link rel="stylesheet" href="register.css" />
+  <body>
+    <div class="LoadingDiVCont">
+      <div class="LoadingDiv">
+        <p>Registering</p>
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <div class="ErrorCont">
+      <div class="LoadingDiv">
+        <p id="ErrorMessage">Something Went Wrong :(</p>
+        <button id="Close">Close</button>
+      </div>
+    </div>
+
+    <div class="EmailErrorCont">
+      <div class="LoadingDiv">
+        <p>Something Went Wrong :(</p>
+        <button id="Close">Close</button>
+      </div>
+    </div>
+
+    <div class="SuccessCont">
+      <div class="SuccessDiv">
+        <p>Account Created Successfully</p>
+        <button id="Close">Close</button>
+      </div>
+    </div>
+
+    <div class="FeildMissedErrorCont">
+      <div class="ErrorLoadingDiv">
+        <p id="ErrorMessage">You Missed Filling Some Feild/s</p>
+        <button id="Close">Close</button>
+      </div>
+    </div>
+
+    <div class="page1">
+      <input type="email" id="UserEmail" placeholder="E-mail" />
+      <input type="password" id="UserPassword" placeholder="Password" />
+      <input type="text" id="FirstName" placeholder="First-Name" />
+      <input type="text" id="SecondName" placeholder="Second-Name" />
+      <input type="text" id="UserLocation" placeholder="Location" />
+      <input type="number" id="UserPhoneNumber" placeholder="Phone-Number" />
+      <button id="register">Register</button>
+      <p>Already Have An Account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script src="register.js" type="module"></script>
+  </body>
+</html>

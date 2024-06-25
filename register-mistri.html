@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mistri/Register Mistri</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+  />
+  <link rel="stylesheet" href="register-mistri.css" />
+  <body>
+    <div class="LoadingDiVCont">
+      <div class="LoadingDiv">
+        <p>Registering</p>
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <div class="ErrorCont">
+      <div class="ErrorLoadingDiv">
+        <p id="ErrorMessage">Something Went Wrong :(</p>
+        <button id="Close">Close</button>
+      </div>
+    </div>
+
+    <div class="FeildMissedErrorCont">
+      <div class="ErrorLoadingDiv">
+        <p id="ErrorMessage">You Missed Filling Some Feild/s</p>
+        <button id="Close">Close</button>
+      </div>
+    </div>
+
+    <div class="EmailErrorCont">
+      <div class="EmailLoadingDiv">
+        <p>Something Went Wrong :(</p>
+        <button id="Close">Close</button>
+      </div>
+    </div>
+
+    <div class="SuccessCont">
+      <div class="SuccessDiv">
+        <p>Account Created Successfully</p>
+        <button id="Close">Close</button>
+      </div>
+    </div>
+
+    <div class="page1">
+      <input type="email" id="MistriEmail" placeholder="E-mail" />
+      <input type="password" id="MistriPassword" placeholder="Password" />
+      <input type="text" id="FirstName" placeholder="First-Name" />
+      <input type="text" id="SecondName" placeholder="Second-Name" />
+      <input type="text" id="MistriAddress" placeholder="Address" />
+      <input type="number" id="MistriPhoneNumber" placeholder="Phone-Number" />
+      <input type="number" id="MistriAge" placeholder="Age" />
+      <select id="MistriCateogory">
+        <option>Technician</option>
+        <option>Electrician</option>
+        <option>Plumber</option>
+        <option>Carpenter</option>
+        <option>Painter</option>
+        <option>Mechanic</option>
+        <option>Welder</option>
+        <option>Bricklayer</option>
+        <option>Roofer</option>
+        <option>HVAC Technician</option>
+        <option>Landscaper</option>
+        <option>Mason</option>
+        <option>Glazier</option>
+        <option>Concrete Finisher</option>
+        <option>Drywall Installer</option>
+        <option>Flooring Installer</option>
+        <option>Ironworker</option>
+        <option>Pest Control Technician</option>
+        <option>Locksmith</option>
+        <option>Heavy Equipment Operator</option>
+        <option>Crane Operator</option>
+        <option>Boilermaker</option>
+        <option>Pipefitter</option>
+        <option>Insulation Worker</option>
+      </select>
+
+      <input
+        type="file"
+        allowed="*/images"
+        id="DocumentProof"
+        style="display: none"
+      />
+      <h3>Select Document Proof:</h3>
+
+      <label for="DocumentProof" id="DocumentLabel">
+        <img src alt="Document Proof" id="DisplayProof" />
+      </label>
+
+      <input
+        type="file"
+        allowed="*/images"
+        id="ProfilePicture"
+        style="display: none"
+      />
+      <h3>Select Profile Picture:</h3>
+
+      <label for="ProfilePicture" id="ProfileLabel">
+        <img src id="DisplayProfile" />
+      </label>
+
+      <button id="register">Register</button>
+      <p>Already Have An Account? <a href="login-mistri.html">Login</a></p>
+    </div>
+
+    <script src="register-mistri.js" type="module" defer=""></script>
+  </body>
+</html>

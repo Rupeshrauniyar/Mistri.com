@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mistri</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+  />
+  <link rel="stylesheet" href="index.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <body>
+    <div class="MenuTab">
+      <button id="LogOut">Logout</button>
+    </div>
+
+    <nav>
+      <div class="ImgCont">
+        <img src="instagramWritten.png" alt="" />
+      </div>
+      <div class="UserDets">
+        <i class="fa-solid fa-user"></i>
+        <h3 id="username"></h3>
+      </div>
+    </nav>
+
+    <div class="SearchBar">
+      <input
+        type="text"
+        placeholder="Search for a mistri."
+        id="search"
+        disabled
+      />
+    </div>
+
+    <div class="RefreshPage">
+      <div class="RefreshImgCont">
+        <img src="noInternet.jpg" alt="" />
+      </div>
+      <button id="RefreshBtn">
+        Refresh <i class="fa-light fa-arrow-rotate-right"></i>
+      </button>
+    </div>
+
+    <div class="CateogorySwiper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="CateogoryImageCont">
+              <img
+                src="https://frontu.com/wp-content/uploads/2021/08/Blog-post-images_6-Featured.svg"
+                alt=""
+                style="object-position: left"
+              />
+            </div>
+            <div class="CateogoryTitle">
+              <p>Technician</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="CateogoryImageCont">
+              <img
+                src="https://mcgrathelectricaldata.com.au/wp-content/uploads/2022/01/Electrician-Inspecting-An-Electrical-Cabinet.jpg"
+                alt=""
+              />
+            </div>
+            <div class="CateogoryTitle">
+              <p>Electrician</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="CateogoryImageCont">
+              <img
+                src="https://savvyplumbing.co.za/wp-content/uploads/2021/06/professional-plumber-1280x854.jpg"
+                alt=""
+              />
+            </div>
+            <div class="CateogoryTitle">
+              <p>Plumber</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="CateogoryImageCont">
+              <img
+                src="https://www.dualway.com/wp-content/uploads/2021/04/bus-mechanic.png"
+                alt=""
+              />
+            </div>
+            <div class="CateogoryTitle">
+              <p>Mechanic</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="CateogoryImageCont">
+              <img
+                src="https://www.usd292.org/wp-content/uploads/2023/07/hiring-a-painter-610x343.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="CateogoryTitle">
+              <p>Painter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page1">
+      <div class="MistriContainer">
+        <div class="MistriCont">
+          <div class="MistriNav">
+            <h3 id="MistriStatus" class="text skeleton"></h3>
+            <p></p>
+          </div>
+
+          <div class="ImageContainer skeleton">
+            <img src="${ProfilePicture}" alt="" id="DisplayProfile" />
+          </div>
+
+          <div class="MistriDetails">
+            <h3 class="text skeleton"></h3>
+            <p class="text skeleton"></p>
+            <p class="text skeleton"></p>
+          </div>
+
+          <div class="BookMistri">
+            <button id="book">Book</button>
+            <button id="view">View Profile</button>
+          </div>
+        </div>
+
+        <div class="MistriCont">
+          <div class="MistriNav">
+            <h3 id="MistriStatus" class="text skeleton"></h3>
+            <p></p>
+          </div>
+
+          <div class="ImageContainer skeleton">
+            <img id="DisplayProfile" />
+          </div>
+
+          <div class="MistriDetails">
+            <h3 class="text skeleton"></h3>
+            <p class="text skeleton"></p>
+            <p class="text skeleton"></p>
+          </div>
+
+          <div class="BookMistri">
+            <button id="book">Book</button>
+            <button id="view">View Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="TabsCont">
+      <div class="Tabs">
+        <a href="#"><i class="fa-sharp fa-solid fa-house"></i></a>
+        <a href="history.html"><i class="fa-light fa-rectangle-history"></i></a>
+        <a href="search.html"><i class="fa-light fa-magnifying-glass"></i></a>
+        <a href="save.html"><i class="fa-sharp fa-light fa-bookmark"></i></a>
+        <a href="profile.html"><i class="fa-light fa-circle-user"></i></a>
+      </div>
+    </div>
+
+    <script src="index.js" defer="" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

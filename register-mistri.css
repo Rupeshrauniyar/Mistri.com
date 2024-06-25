@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.LoadingDiVCont {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000062;
+  display: none;
+  transition: all 1s ease;
+}
+.ErrorCont {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000062;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+.FeildMissedErrorCont {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000062;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+.SuccessCont {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000062;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+.EmailErrorCont {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000062;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+.LoadingDiv {
+  width: 70%;
+  height: 20vh;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ErrorLoadingDiv {
+  width: 70%;
+  height: 20vh;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.EmailLoadingDiv {
+  width: 70%;
+  height: 20vh;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.SuccessDiv {
+  width: 70%;
+  height: 20vh;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.loader {
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+#Close {
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 35px;
+  font-weight: 400;
+  margin: 5px;
+  width: 90%;
+  background-color: #0865fd;
+}
+.page1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+input {
+  padding: 0 10px;
+  width: 90%;
+  height: 50px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 0 1px #000;
+  border: none;
+}
+select {
+  padding: 0 10px;
+  width: 95%;
+  height: 50px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 0 1px #000;
+  border: none;
+}
+#register {
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 400;
+  margin: 5px;
+
+  background-color: #0865fd;
+}
+#DocumentLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: #efefef;
+  border-radius: 8px;
+}
+#DocumentLabel > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px dotted #000;
+  object-fit: contain;
+}
+#DisplayProfile {
+  width: 110%;
+  height: 110%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 50%;
+}
+#ProfileLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #efefef;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px dotted #000;
+}
+a {
+  text-decoration: none;
+}
